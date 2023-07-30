@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #242424;
+    --primary-color: #f5f5f5;
+    --secundary-color: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+sidebar {
+    position: relative;
+    background-image: url(../assets/img/comida4.jpg);
+    flex: 2;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    &::after {
+        content: 'Restaurante Dannyel';
+
+        color: white;
+        font-size: 4.2rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 16px;
+    padding: 0 5%;
+    background-color: rgb(255, 255, 255);
+
+    & h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #242424;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+
+    & input {
+        border: none;
+        border-radius: 24px;
+        padding: 8px 16px;
+        background-color: #ffffff;
+        font-size: 16px;
+        border: 2px solid #cacaca;
+
+        &::placeholder { 
+            font-weight: 600;
+            color: #777777;
+           }
+    }
+
+    & button {
+        border: none;
+        outline: none;
+        padding: 12px 8px;
+        border-radius: 50px;
+        font-weight: bold;
+        color: white;
+        background-color: orange;
+        margin-top: 4px;
+        &:hover {
+            cursor: pointer;
+            background-color: #ff8c00;
+        }
+    }
+
+
+
+
+}
