@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /*!
 * Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
 * Copyright 2013-2023 Start Bootstrap
@@ -384,6 +386,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,6 +445,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -463,6 +467,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: textfield;
 }
 
 output {
@@ -10832,8 +10837,12 @@ textarea.form-control-lg {
 
 /* Styling  */
 
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 #hero{
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
   background: url(../picture/herobg.jpg);
   background-position: center;
   backdrop-filter: blur(5px);

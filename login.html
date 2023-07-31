@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante?</title>
+    <title>BIG Bite Burguer</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -11,11 +11,26 @@
         <sidebar>
         </sidebar>
         <form action="index.html">
-            <h2>LOGIN</h2>
-            <input type="text" name="username" id="username" placeholder="USUÁRIO">
-            <input type="password" name="password" id="password" placeholder="SENHA">
-            <button type="submit">LOGIN</button>
+            <img src="./picture/logo_bigbite.png" alt="" width="250px">
+            <h2>Logue na sua conta</h2>
+
+            <div>
+            <label for="username">USUÁRIO</label>
+            <input type="text" name="username" id="username" placeholder="'Ex. Dannyel'">
+            </div>
+
+            <div>
+            <label for="password">SENHA</label>
+            <input type="password" name="password" id="password" placeholder="'Ex. Banana123'">
+            <a class="esqueceu">Esqueceu a senha?</a>
+            </div>
             
+            <button type="submit" class="hoverzinho">Entrar</button>
+            
+            <div class="cadastro">
+            <h4 href="#" class="logincenter">Ainda não tem uma conta? </h4>
+                <a class="hoverzinho"> Cadastre-se</a>
+            </div>
         </form>
     </main>
 </body>

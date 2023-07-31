@@ -16,6 +16,7 @@
 body {
     background: var(--bg-color);
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -27,7 +28,7 @@ main {
 
 sidebar {
     position: relative;
-    background-image: url(../assets/img/comida4.jpg);
+    background-image: url(../picture/loginbg.jpeg);
     flex: 2;
     height: 100%;
     background-size: cover;
@@ -36,7 +37,7 @@ sidebar {
     background-position: top;
 
     &::after {
-        content: 'Restaurante Dannyel';
+        content: 'BIG Bite Burguer';
 
         color: white;
         font-size: 4.2rem;
@@ -60,10 +61,10 @@ form {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     height: 100%;
     gap: 16px;
-    padding: 0 5%;
+    padding: 10% 5%;
     background-color: rgb(255, 255, 255);
 
     & h2 {
@@ -74,19 +75,30 @@ form {
         margin-bottom: 16px;
     }
 
+    & label{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
     & input {
         border: none;
         border-radius: 24px;
-        padding: 8px 16px;
+        padding: 8px 12px;
         background-color: #ffffff;
         font-size: 16px;
+        font-weight: 600;
         border: 2px solid #cacaca;
+        width: 100%;
 
         &::placeholder { 
             font-weight: 600;
             color: #777777;
            }
+       
     }
 
     & button {
@@ -95,16 +107,76 @@ form {
         padding: 12px 8px;
         border-radius: 50px;
         font-weight: bold;
-        color: white;
-        background-color: orange;
+        font-size: 1rem;
+        color: #000;
+        background-color: #f4c524;
         margin-top: 4px;
-        &:hover {
-            cursor: pointer;
+        transition: 0.2s ease;
+        &:hover{
+            cursor:pointer;
             background-color: #ff8c00;
+            transition: 0.2s ease;
+            transform: scale(0.98);
         }
     }
 
+    & img{
+        margin: 0 auto;
+        max-width: 200px;
+    }
+
+    .esqueceu{
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
+        color: #000;
+    }
+}
 
 
+.cadastro{
+    margin-top: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 
+    & a{
+        text-decoration: none;
+        color: #000;
+        border-radius: 999px;
+        background-color: #f4c524;
+        padding: 8px 16px;
+        font-weight: bold;
+        transition: 0.2s ease;
+        cursor: pointer;
+        &:hover{
+            background-color: #ff8c00;
+            transition: 0.2s ease;
+            transform: scale(0.95);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    form {
+        padding: 10% 15%;
+    }
+    sidebar{
+        display: none;
+    }
+    
+}
+    
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10% 8%;
+   
+}
 }
