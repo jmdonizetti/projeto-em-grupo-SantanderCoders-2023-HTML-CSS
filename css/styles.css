@@ -11178,6 +11178,7 @@ body {
   background: url(../picture/herobg.jpg);
   background-position: center;
   backdrop-filter: blur(5px);
+  height: calc(100vh - 106px);
 }
 .login {
   margin-left: 1rem;
@@ -11209,7 +11210,7 @@ body {
 .image-1 {
   padding: 0;
   margin-right: 50px;
-  filter: drop-shadow(30px 10px 4px #ff0000);
+  filter: drop-shadow(8px 8px 5px #ff0000);
 }
 
 .info-2 {
@@ -11226,7 +11227,7 @@ body {
 .image-2 {
   padding: 30px;
   margin-left: 50px;
-  filter: drop-shadow(-30px 10px 4px #ffd700);
+  filter: drop-shadow(-8px 8px 5px #ffd700);
 }
 
 #about {
@@ -11239,6 +11240,11 @@ body {
 
 #about-title {
   text-align: left;
+}
+
+.text-1 p,
+.text-2 p {
+  text-align: right;
 }
 
 .sticky {
