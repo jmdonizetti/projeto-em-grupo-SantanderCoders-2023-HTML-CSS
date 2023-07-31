@@ -2807,24 +2807,7 @@ textarea.form-control-lg {
   
 }
 
-.login{
-  margin-left: 1rem;
-}
-.login {
-  --bs-btn-padding-x: 0.75rem;
-  --bs-btn-padding-y: 0.375rem;
 
-  display: block;
-  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  margin-left: -0.75em;
-
-}
-
-.login:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
-}
 
 
 .btn:hover {
@@ -10845,4 +10828,61 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+/* Styling  */
+
+#hero{
+  padding-bottom: 8rem;
+  background: url(../picture/herobg.jpg);
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+.login{
+  margin-left: 1rem;
+}
+.login {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+
+  display: block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  margin-left: -0.75em;
+
+}
+
+.login:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+.info-1{
+  display: flex;
+  justify-content: space-between;
+}
+/* ABOUT HTML */
+.text-1 {
+  max-width: 800px;
+  padding: 30px;
+}
+
+.image-1 {
+  padding: 30px;
+  margin-right: 50px;
+}
+
+.info-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-2 {
+  max-width: 600px;
+  padding: 30px;
+  margin-right: 50px;
+}
+
+.image-2 {
+  padding: 30px;
+  margin-left: 50px;
 }
