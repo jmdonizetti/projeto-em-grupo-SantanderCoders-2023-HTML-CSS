@@ -10876,8 +10876,9 @@ body {
 }
 
 .image-1 {
-  padding: 30px;
+  padding: 0;
   margin-right: 50px;
+  filter: drop-shadow(30px 10px 4px 	#FF0000);
 }
 
 .info-2 {
@@ -10894,4 +10895,17 @@ body {
 .image-2 {
   padding: 30px;
   margin-left: 50px;
+  filter: drop-shadow(30px 10px 4px #FFD700);
+}
+
+#about{
+  padding-bottom: 10rem;
+  background: url(../picture/about_us.avif);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+#about-title {
+  text-align: left;
 }
