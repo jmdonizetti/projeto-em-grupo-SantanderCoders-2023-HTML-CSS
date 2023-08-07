@@ -12,6 +12,6 @@ Tecnologias: HTML5, CSS3 e Bootstrap
 Link do projeto: https://jmdonizetti.github.io/projeto-em-grupo-SantanderCoders-2023-HTML-CSS/login.html?
 
 BIG BITE BURGUER:
-Pagina de login 
-Pagina principal 
+Pagina de login - 
+Pagina principal -
 Pagina de Sobre nós
