@@ -11204,7 +11204,7 @@ body {
 }
 /* ABOUT HTML */
 .text-1 {
-  max-width: 800px;
+  max-width: 600px;
   padding: 30px;
 }
 
@@ -11223,6 +11223,7 @@ body {
   max-width: 600px;
   padding: 30px;
   margin-right: 50px;
+  text-align: right;
 }
 
 .image-2 {
@@ -11233,7 +11234,7 @@ body {
 
 #about {
   padding-bottom: 10rem;
-  background: url(../picture/about_us.avif);
+  background: url(../picture/about_us.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11243,7 +11244,6 @@ body {
   text-align: left;
 }
 
-.text-1 p,
 .text-2 p {
   text-align: right;
 }
@@ -11252,4 +11252,22 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .image-1, .image-2{
+    display: none ;
+  }
+  .text-1, .text-2 p{
+    text-align: left;
+    
+  }
+
+  .text-2{
+    margin: 0;
+    text-align: left;
+  }
+  #about-title {
+    
+  }
 }
