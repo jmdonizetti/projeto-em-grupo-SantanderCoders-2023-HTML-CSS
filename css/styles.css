@@ -11179,6 +11179,7 @@ body {
   background-position: center;
   backdrop-filter: blur(5px);
   height: calc(100vh - 106px);
+  background-repeat: no-repeat;
 }
 .login {
   margin-left: 1rem;
